@@ -1,0 +1,6 @@
+<% if @photos %>
+  <% @photos.each do |photo| %>
+    <%= image_tag(photo.url_m, alt: photo.title) %> <!-- Display medium-sized photos -->
+    <%= photo.url_m %> <!-- Display photo URL for debugging -->
+  <% end %>
+<% end %>
